@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DW Allroundservice Pfalz – Hausmeister, Haushaltshilfe, Transporte & Immobilienservice in Weilerbach</title>
 <meta name="description" content="DW Allroundservice Pfalz aus Weilerbach: Hausmeisterservice, haushaltsnahe Dienstleistungen, Kurier & Transporte sowie Immobilienservice für Privatkunden, Vermieter und Hausverwaltungen. Jetzt anrufen: 0176 80008197.">
+<meta name="keywords" content="Hausmeister Weilerbach, Haushaltshilfe Pfalz, Kurier Transporte, Immobilienservice, Gartenpflege, Reparaturservice">
+<meta name="author" content="Daniel Wiebe">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="revisit-after" content="7 days">
 <meta name="theme-color" content="#2A6B31">
 <meta name="color-scheme" content="light only">
 <meta name="supported-color-schemes" content="light">
@@ -66,6 +70,17 @@ img{max-width:100%;display:block}
 .mark{display:block;flex:none;width:64px;height:64px;margin:-9px -6px;background:var(--logo) center/contain no-repeat}
 .mark-gross{width:min(430px,88vw);height:min(430px,88vw);margin:-24px}
 @media(max-width:860px){.mark-gross{width:min(260px,62vw);height:min(260px,62vw);margin:-18px}}
+
+
+/* ---------- Sprachschalter ---------- */
+.lang-switcher{display:flex;gap:8px;margin-right:14px}
+.lang-btn{
+  background:none;border:none;font-size:20px;cursor:pointer;padding:6px;
+  border-radius:6px;opacity:.6;transition:opacity .2s;line-height:1
+}
+.lang-btn:hover{opacity:.9}
+.lang-btn-active{opacity:1;background:rgba(42,107,49,.1)}
+@media(max-width:880px){.lang-switcher{margin-right:8px;gap:4px}.lang-btn{font-size:18px;padding:4px}}
 
 /* ---------- Kopfzeile ---------- */
 header{
@@ -280,6 +295,96 @@ footer .wrap{padding:44px 0 36px}
   .karte:hover{transform:none}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "DW Allroundservice Pfalz",
+  "description": "Zuverlässiger Allround-Partner für Haus, Haushalt, Transport und Immobilien in Weilerbach und Umgebung. Hausmeisterservice, haushaltsnahe Dienstleistungen, Kurier & Transporte, Immobilienservice.",
+  "url": "https://dwallroundservicepfalz.de",
+  "telephone": "+49 176 80008197",
+  "email": "DWallroundservicePfalz@web.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hohl 7",
+    "addressLocality": "Weilerbach",
+    "postalCode": "67685",
+    "addressCountry": "DE",
+    "addressRegion": "Rheinland-Pfalz"
+  },
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Weilerbach"
+    },
+    {
+      "@type": "Place",
+      "name": "Erzenhausen"
+    },
+    {
+      "@type": "Place",
+      "name": "Mackenbach"
+    },
+    {
+      "@type": "Place",
+      "name": "Schwedelbach"
+    },
+    {
+      "@type": "Place",
+      "name": "Rodenbach"
+    },
+    {
+      "@type": "Place",
+      "name": "Otterbach"
+    },
+    {
+      "@type": "Place",
+      "name": "Kaiserslautern"
+    },
+    {
+      "@type": "Place",
+      "name": "Ramstein-Miesenbach"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "17:00",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Wiebe"
+  },
+  "sameAs": [
+    "https://www.google.com/maps/search/DW+Allroundservice+Pfalz"
+  ],
+  "knowsAbout": [
+    "Hausmeisterservice",
+    "Haushaltshilfe",
+    "Gartenpflege",
+    "Kurier- und Transportservice",
+    "Immobilienmanagement",
+    "Wohnungsübergabe",
+    "Kleinreparaturen",
+    "Reinigung"
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
@@ -300,6 +405,10 @@ footer .wrap{padding:44px 0 36px}
       <a href="#gebiet">Einsatzgebiet</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
+    <div class="lang-switcher">
+      <button id="de-btn" class="lang-btn lang-btn-active" title="Deutsch" aria-label="Deutsch">🇩🇪</button>
+      <button id="en-btn" class="lang-btn" title="English" aria-label="English">🇬🇧</button>
+    </div>
     <a class="btn btn-tel" href="tel:+4917680008197">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
       <span class="lang">0176 80008197</span>
@@ -373,6 +482,7 @@ footer .wrap{padding:44px 0 36px}
           <li>Möbel aufbauen &amp; montieren</li>
           <li>Behördenpost, Schriftverkehr &amp; Bewerbungen</li>
           <li>IT im Haushalt: Handy, WLAN, Drucker</li>
+          <li data-de="Hundesitting &amp; Dogwalking" data-en="Dog sitting &amp; dog walking">Hundesitting &amp; Dogwalking</li>
           <li>Alltagsunterstützung für jede Situation</li>
         </ul>
       </article>
@@ -641,7 +751,223 @@ footer .wrap{padding:44px 0 36px}
 </footer>
 
 <script>
+
+const translations = {
+  de: {
+    'Leistungen': 'Services',
+    'Ablauf': 'How It Works',
+    'Preise': 'Pricing',
+    'Einsatzgebiet': 'Service Area',
+    'Kontakt': 'Contact',
+    'So läuft es ab': 'How It Works',
+    'Drei Schritte bis zur erledigten Aufgabe': 'Three Steps to Getting It Done',
+    'Sie melden sich': 'You Get in Touch',
+    'Anruf, WhatsApp oder E-Mail. Beschreiben Sie kurz, worum es geht – Fotos helfen, sind aber kein Muss.': 'Call, WhatsApp, or email. Briefly describe what you need—photos help but aren't required.',
+    'Termin & Preis': 'Appointment & Price',
+    'Ich schaue mir die Sache an und nenne Ihnen vorab, was es kostet. Erst danach entscheiden Sie.': 'I'll assess the job and give you a price upfront. Then you decide.',
+    'Erledigt': 'Done',
+    'Ich arbeite sauber, räume hinter mir auf und melde mich, wenn alles fertig ist. Rechnung kommt schriftlich.': 'I work cleanly, clean up after myself, and let you know when it's done. Invoice follows in writing.',
+    'Über mich': 'About Me',
+    'Zuverlässig. Flexibel. Persönlich.': 'Reliable. Flexible. Personal.',
+    'Faire Preise, vorher besprochen': 'Fair Pricing, Agreed Beforehand',
+    'Ich rechne nach Aufwand und Nutzen ab': 'I charge based on effort and value',
+    'Nach Aufwand und Nutzen': 'Based on Effort & Value',
+    'Sonderpreise für Rentner': 'Special Rates for Retirees',
+    'Keine versteckten Kosten': 'No Hidden Costs',
+    'Sagen Sie mir, worum es geht': 'Tell Me What You Need',
+    'Am schnellsten geht es telefonisch. Wenn ich gerade auf einem Auftrag bin, rufe ich zurück.': 'Fastest by phone. If I'm on a job, I'll call back.',
+    'Telefon & WhatsApp': 'Phone & WhatsApp',
+    'E-Mail': 'Email',
+    'Einsatzgebiet': 'Service Area',
+    'E-Mail & Antwort': 'Email & Response',
+    'Rückmeldung in 12h': 'Reply within 12h',
+    'Telefon': 'Phone',
+    'Mo–Fr ab 17 Uhr': 'Mon–Fri from 5 PM',
+    'Sa 8–20 Uhr': 'Sat 8 AM–8 PM',
+    'Anfrage schreiben': 'Send Inquiry',
+    'Anfrage per E-Mail öffnen': 'Open email inquiry',
+    'Region Weilerbach · Pfalz': 'Weilerbach Region · Palatinate',
+    'Hausmeisterservice': 'Property Management',
+    'Haushaltsnahe Dienstleistungen': 'Household Services',
+    'Kurier & Transport': 'Courier & Transport',
+    'Immobilienservice': 'Real Estate Services',
+    'Reparaturen & Instandhaltung': 'Repairs & Maintenance',
+    'Gartenpflege & Rasenmähen': 'Garden Care & Lawn Mowing',
+    'Winterdienst (Schnee & Streudienst)': 'Winter Service (Snow & Gritting)',
+    'Kleine Maler- & Montagearbeiten': 'Minor Painting & Assembly Work',
+    'Allgemeine Hausmeistertätigkeiten': 'General Caretaking Tasks',
+    'Einkäufe & Besorgungen': 'Shopping & Errands',
+    'Botengänge & Erledigungen': 'Messenger & Task Services',
+    'Möbel aufbauen & montieren': 'Furniture Assembly & Installation',
+    'Behördenpost, Schriftverkehr & Bewerbungen': 'Official Correspondence & Applications',
+    'IT im Haushalt: Handy, WLAN, Drucker': 'Household IT: Phone, WiFi, Printer',
+    'Hundesitting & Dogwalking': 'Dog Sitting & Dog Walking',
+    'Alltagsunterstützung für jede Situation': 'Daily Support for Any Situation',
+    'Lieferungen & Abholungen in der Region': 'Deliveries & Collections in the Region',
+    'Kleintransporte mit Anhänger': 'Small Transports with Trailer',
+    'Transporte mit Sprinter': 'Sprinter Van Transport',
+    'Flexible Terminabsprache': 'Flexible Scheduling',
+    'Zuverlässig, pünktlich & sorgfältig': 'Reliable, Punctual & Careful',
+    'Wohnungsübergaben (Ein- & Auszug)': 'Apartment Handovers (Move-in & Move-out)',
+    'Renovierung bei Mieterwechsel': 'Renovation on Tenant Change',
+    'Besichtigungstermine durchführen': 'Property Viewings',
+    'Objektbetreuung & laufende Verwaltung': 'Property Management & Ongoing Administration',
+    'Ansprechpartner für Mieter vor Ort': 'On-Site Contact for Tenants',
+  },
+  en: {}
+};
+
+// Inverse: English keys haben English values
+for (let key in translations.de) {
+  translations.en[translations.de[key]] = key;
+}
+
+
+
+const translations = {
+  de: {
+    'Leistungen': 'Services',
+    'Ablauf': 'How It Works',
+    'Preise': 'Pricing',
+    'Einsatzgebiet': 'Service Area',
+    'Kontakt': 'Contact',
+    'So läuft es ab': 'How It Works',
+    'Drei Schritte bis zur erledigten Aufgabe': 'Three Steps to Getting It Done',
+    'Sie melden sich': 'You Get in Touch',
+    'Anruf, WhatsApp oder E-Mail. Beschreiben Sie kurz, worum es geht – Fotos helfen, sind aber kein Muss.': 'Call, WhatsApp, or email. Briefly describe what you need—photos help but aren't required.',
+    'Termin & Preis': 'Appointment & Price',
+    'Ich schaue mir die Sache an und nenne Ihnen vorab, was es kostet. Erst danach entscheiden Sie.': 'I'll assess the job and give you a price upfront. Then you decide.',
+    'Erledigt': 'Done',
+    'Ich arbeite sauber, räume hinter mir auf und melde mich, wenn alles fertig ist. Rechnung kommt schriftlich.': 'I work cleanly, clean up after myself, and let you know when it's done. Invoice follows in writing.',
+    'Über mich': 'About Me',
+    'Zuverlässig. Flexibel. Persönlich.': 'Reliable. Flexible. Personal.',
+    'Faire Preise, vorher besprochen': 'Fair Pricing, Agreed Beforehand',
+    'Ich rechne nach Aufwand und Nutzen ab': 'I charge based on effort and value',
+    'Nach Aufwand und Nutzen': 'Based on Effort & Value',
+    'Sonderpreise für Rentner': 'Special Rates for Retirees',
+    'Keine versteckten Kosten': 'No Hidden Costs',
+    'Sagen Sie mir, worum es geht': 'Tell Me What You Need',
+    'Am schnellsten geht es telefonisch. Wenn ich gerade auf einem Auftrag bin, rufe ich zurück.': 'Fastest by phone. If I'm on a job, I'll call back.',
+    'Telefon & WhatsApp': 'Phone & WhatsApp',
+    'E-Mail': 'Email',
+    'Einsatzgebiet': 'Service Area',
+    'E-Mail & Antwort': 'Email & Response',
+    'Rückmeldung in 12h': 'Reply within 12h',
+    'Telefon': 'Phone',
+    'Mo–Fr ab 17 Uhr': 'Mon–Fri from 5 PM',
+    'Sa 8–20 Uhr': 'Sat 8 AM–8 PM',
+    'Anfrage schreiben': 'Send Inquiry',
+    'Anfrage per E-Mail öffnen': 'Open email inquiry',
+    'Region Weilerbach · Pfalz': 'Weilerbach Region · Palatinate',
+    'Hausmeisterservice': 'Property Management',
+    'Haushaltsnahe Dienstleistungen': 'Household Services',
+    'Kurier & Transport': 'Courier & Transport',
+    'Immobilienservice': 'Real Estate Services',
+    'Reparaturen & Instandhaltung': 'Repairs & Maintenance',
+    'Gartenpflege & Rasenmähen': 'Garden Care & Lawn Mowing',
+    'Winterdienst (Schnee & Streudienst)': 'Winter Service (Snow & Gritting)',
+    'Kleine Maler- & Montagearbeiten': 'Minor Painting & Assembly Work',
+    'Allgemeine Hausmeistertätigkeiten': 'General Caretaking Tasks',
+    'Einkäufe & Besorgungen': 'Shopping & Errands',
+    'Botengänge & Erledigungen': 'Messenger & Task Services',
+    'Möbel aufbauen & montieren': 'Furniture Assembly & Installation',
+    'Behördenpost, Schriftverkehr & Bewerbungen': 'Official Correspondence & Applications',
+    'IT im Haushalt: Handy, WLAN, Drucker': 'Household IT: Phone, WiFi, Printer',
+    'Hundesitting & Dogwalking': 'Dog Sitting & Dog Walking',
+    'Alltagsunterstützung für jede Situation': 'Daily Support for Any Situation',
+    'Lieferungen & Abholungen in der Region': 'Deliveries & Collections in the Region',
+    'Kleintransporte mit Anhänger': 'Small Transports with Trailer',
+    'Transporte mit Sprinter': 'Sprinter Van Transport',
+    'Flexible Terminabsprache': 'Flexible Scheduling',
+    'Zuverlässig, pünktlich & sorgfältig': 'Reliable, Punctual & Careful',
+    'Wohnungsübergaben (Ein- & Auszug)': 'Apartment Handovers (Move-in & Move-out)',
+    'Renovierung bei Mieterwechsel': 'Renovation on Tenant Change',
+    'Besichtigungstermine durchführen': 'Property Viewings',
+    'Objektbetreuung & laufende Verwaltung': 'Property Management & Ongoing Administration',
+    'Ansprechpartner für Mieter vor Ort': 'On-Site Contact for Tenants',
+  },
+  en: {}
+};
+
+// Inverse: English keys haben English values
+for (let key in translations.de) {
+  translations.en[translations.de[key]] = key;
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const deBut = document.getElementById('de-btn');
+  const enBut = document.getElementById('en-btn');
+  const savedLang = localStorage.getItem('lang') || 'de';
+  let currentLang = savedLang;
+
+  function translateNode(node, lang) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const text = node.textContent.trim();
+      if (text && translations[lang] && translations[lang][text]) {
+        node.textContent = translations[lang][text];
+      }
+    } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE') {
+      Array.from(node.childNodes).forEach(child => translateNode(child, lang));
+    }
+  }
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    
+    // Übersetze den gesamten Body
+    document.body.querySelectorAll('*').forEach(el => {
+      Array.from(el.childNodes).forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const text = node.textContent.trim();
+          if (text && translations[lang] && translations[lang][text]) {
+            node.textContent = translations[lang][text];
+          }
+        }
+      });
+    });
+
+    // Buttons aktualisieren
+    deBut.classList.toggle('lang-btn-active', lang === 'de');
+    enBut.classList.toggle('lang-btn-active', lang === 'en');
+  }
+
+  deBut.addEventListener('click', () => setLanguage('de'));
+  enBut.addEventListener('click', () => setLanguage('en'));
+  
+  // Initiale Sprache setzen (außer Deutsch, dann ist nichts zu tun)
+  if (savedLang === 'en') {
+    setLanguage('en');
+  }
+});
+
+
 document.getElementById('jahr').textContent = new Date().getFullYear();
+
+
+// Sprach-Umschaltung
+document.addEventListener('DOMContentLoaded',function(){
+  const deBut=document.getElementById('de-btn');
+  const enBut=document.getElementById('en-btn');
+  const savedLang=localStorage.getItem('lang')||'de';
+  let currentLang=savedLang;
+  
+  function setLanguage(lang){
+    currentLang=lang;
+    localStorage.setItem('lang',lang);
+    document.querySelectorAll('[data-de][data-en]').forEach(el=>{
+      el.textContent=lang==='de'?el.getAttribute('data-de'):el.getAttribute('data-en');
+    });
+    deBut.classList.toggle('lang-btn-active',lang==='de');
+    enBut.classList.toggle('lang-btn-active',lang==='en');
+  }
+  
+  deBut.addEventListener('click',()=>setLanguage('de'));
+  enBut.addEventListener('click',()=>setLanguage('en'));
+  setLanguage(currentLang);
+});
+
 
 // Anfrage als vorbereitete E-Mail öffnen
 document.getElementById('senden').addEventListener('click', function(){
