@@ -73,7 +73,7 @@ img{max-width:100%;display:block}
 
 
 /* ---------- Sprachschalter ---------- */
-.lang-switcher{display:flex;gap:8px;margin-right:14px}
+.lang-switcher{display:flex;gap:6px;margin:0 6px 0 auto;flex-shrink:0}
 .lang-btn{
   background:none;border:none;font-size:20px;cursor:pointer;padding:6px;
   border-radius:6px;opacity:.6;transition:opacity .2s;line-height:1
@@ -87,18 +87,18 @@ header{
   position:sticky;top:0;z-index:100;background:#FFFFFF;
   backdrop-filter:blur(10px);border-bottom:1px solid var(--linie);
 }
-.kopf{display:flex;align-items:center;gap:18px;padding:12px 0}
-.marke{display:flex;align-items:center;gap:12px;text-decoration:none;flex:1;min-width:0}
+.kopf{display:flex;align-items:center;gap:12px;padding:12px 0;width:100%;justify-content:space-between}
+.marke{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0;min-width:0}
 
 .marke b{font-family:"Archivo",sans-serif;font-weight:800;font-size:17px;color:var(--gruen-tief);display:block;white-space:nowrap}
 .marke span{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--grau);display:block}
-nav{display:flex;gap:26px}
+nav{display:flex;gap:26px;flex:1;justify-content:flex-start}
 nav a{
   text-decoration:none;font-weight:600;font-size:15px;color:var(--tinte);
   padding:6px 0;border-bottom:2px solid transparent
 }
 nav a:hover{border-color:var(--gold);color:var(--gruen-tief)}
-.btn{
+.btn{flex-shrink:0;
   display:inline-flex;align-items:center;gap:9px;text-decoration:none;
   font-family:"Archivo",sans-serif;font-weight:700;font-size:15px;
   padding:12px 20px;border-radius:999px;border:2px solid transparent;white-space:nowrap
@@ -760,214 +760,66 @@ const translations = {
     'Einsatzgebiet': 'Service Area',
     'Kontakt': 'Contact',
     'So läuft es ab': 'How It Works',
-    'Drei Schritte bis zur erledigten Aufgabe': 'Three Steps to Getting It Done',
     'Sie melden sich': 'You Get in Touch',
     'Anruf, WhatsApp oder E-Mail. Beschreiben Sie kurz, worum es geht – Fotos helfen, sind aber kein Muss.': 'Call, WhatsApp, or email. Briefly describe what you need—photos help but aren't required.',
     'Termin & Preis': 'Appointment & Price',
-    'Ich schaue mir die Sache an und nenne Ihnen vorab, was es kostet. Erst danach entscheiden Sie.': 'I'll assess the job and give you a price upfront. Then you decide.',
     'Erledigt': 'Done',
-    'Ich arbeite sauber, räume hinter mir auf und melde mich, wenn alles fertig ist. Rechnung kommt schriftlich.': 'I work cleanly, clean up after myself, and let you know when it's done. Invoice follows in writing.',
     'Über mich': 'About Me',
     'Zuverlässig. Flexibel. Persönlich.': 'Reliable. Flexible. Personal.',
     'Faire Preise, vorher besprochen': 'Fair Pricing, Agreed Beforehand',
-    'Ich rechne nach Aufwand und Nutzen ab': 'I charge based on effort and value',
     'Nach Aufwand und Nutzen': 'Based on Effort & Value',
     'Sonderpreise für Rentner': 'Special Rates for Retirees',
     'Keine versteckten Kosten': 'No Hidden Costs',
     'Sagen Sie mir, worum es geht': 'Tell Me What You Need',
-    'Am schnellsten geht es telefonisch. Wenn ich gerade auf einem Auftrag bin, rufe ich zurück.': 'Fastest by phone. If I'm on a job, I'll call back.',
     'Telefon & WhatsApp': 'Phone & WhatsApp',
-    'E-Mail': 'Email',
-    'Einsatzgebiet': 'Service Area',
     'E-Mail & Antwort': 'Email & Response',
     'Rückmeldung in 12h': 'Reply within 12h',
     'Telefon': 'Phone',
     'Mo–Fr ab 17 Uhr': 'Mon–Fri from 5 PM',
     'Sa 8–20 Uhr': 'Sat 8 AM–8 PM',
     'Anfrage schreiben': 'Send Inquiry',
-    'Anfrage per E-Mail öffnen': 'Open email inquiry',
     'Region Weilerbach · Pfalz': 'Weilerbach Region · Palatinate',
     'Hausmeisterservice': 'Property Management',
     'Haushaltsnahe Dienstleistungen': 'Household Services',
     'Kurier & Transport': 'Courier & Transport',
     'Immobilienservice': 'Real Estate Services',
-    'Reparaturen & Instandhaltung': 'Repairs & Maintenance',
-    'Gartenpflege & Rasenmähen': 'Garden Care & Lawn Mowing',
-    'Winterdienst (Schnee & Streudienst)': 'Winter Service (Snow & Gritting)',
-    'Kleine Maler- & Montagearbeiten': 'Minor Painting & Assembly Work',
-    'Allgemeine Hausmeistertätigkeiten': 'General Caretaking Tasks',
-    'Einkäufe & Besorgungen': 'Shopping & Errands',
-    'Botengänge & Erledigungen': 'Messenger & Task Services',
-    'Möbel aufbauen & montieren': 'Furniture Assembly & Installation',
-    'Behördenpost, Schriftverkehr & Bewerbungen': 'Official Correspondence & Applications',
-    'IT im Haushalt: Handy, WLAN, Drucker': 'Household IT: Phone, WiFi, Printer',
-    'Hundesitting & Dogwalking': 'Dog Sitting & Dog Walking',
-    'Alltagsunterstützung für jede Situation': 'Daily Support for Any Situation',
-    'Lieferungen & Abholungen in der Region': 'Deliveries & Collections in the Region',
-    'Kleintransporte mit Anhänger': 'Small Transports with Trailer',
-    'Transporte mit Sprinter': 'Sprinter Van Transport',
-    'Flexible Terminabsprache': 'Flexible Scheduling',
-    'Zuverlässig, pünktlich & sorgfältig': 'Reliable, Punctual & Careful',
-    'Wohnungsübergaben (Ein- & Auszug)': 'Apartment Handovers (Move-in & Move-out)',
-    'Renovierung bei Mieterwechsel': 'Renovation on Tenant Change',
-    'Besichtigungstermine durchführen': 'Property Viewings',
-    'Objektbetreuung & laufende Verwaltung': 'Property Management & Ongoing Administration',
-    'Ansprechpartner für Mieter vor Ort': 'On-Site Contact for Tenants',
   },
   en: {}
 };
 
-// Inverse: English keys haben English values
 for (let key in translations.de) {
   translations.en[translations.de[key]] = key;
 }
-
-
-
-const translations = {
-  de: {
-    'Leistungen': 'Services',
-    'Ablauf': 'How It Works',
-    'Preise': 'Pricing',
-    'Einsatzgebiet': 'Service Area',
-    'Kontakt': 'Contact',
-    'So läuft es ab': 'How It Works',
-    'Drei Schritte bis zur erledigten Aufgabe': 'Three Steps to Getting It Done',
-    'Sie melden sich': 'You Get in Touch',
-    'Anruf, WhatsApp oder E-Mail. Beschreiben Sie kurz, worum es geht – Fotos helfen, sind aber kein Muss.': 'Call, WhatsApp, or email. Briefly describe what you need—photos help but aren't required.',
-    'Termin & Preis': 'Appointment & Price',
-    'Ich schaue mir die Sache an und nenne Ihnen vorab, was es kostet. Erst danach entscheiden Sie.': 'I'll assess the job and give you a price upfront. Then you decide.',
-    'Erledigt': 'Done',
-    'Ich arbeite sauber, räume hinter mir auf und melde mich, wenn alles fertig ist. Rechnung kommt schriftlich.': 'I work cleanly, clean up after myself, and let you know when it's done. Invoice follows in writing.',
-    'Über mich': 'About Me',
-    'Zuverlässig. Flexibel. Persönlich.': 'Reliable. Flexible. Personal.',
-    'Faire Preise, vorher besprochen': 'Fair Pricing, Agreed Beforehand',
-    'Ich rechne nach Aufwand und Nutzen ab': 'I charge based on effort and value',
-    'Nach Aufwand und Nutzen': 'Based on Effort & Value',
-    'Sonderpreise für Rentner': 'Special Rates for Retirees',
-    'Keine versteckten Kosten': 'No Hidden Costs',
-    'Sagen Sie mir, worum es geht': 'Tell Me What You Need',
-    'Am schnellsten geht es telefonisch. Wenn ich gerade auf einem Auftrag bin, rufe ich zurück.': 'Fastest by phone. If I'm on a job, I'll call back.',
-    'Telefon & WhatsApp': 'Phone & WhatsApp',
-    'E-Mail': 'Email',
-    'Einsatzgebiet': 'Service Area',
-    'E-Mail & Antwort': 'Email & Response',
-    'Rückmeldung in 12h': 'Reply within 12h',
-    'Telefon': 'Phone',
-    'Mo–Fr ab 17 Uhr': 'Mon–Fri from 5 PM',
-    'Sa 8–20 Uhr': 'Sat 8 AM–8 PM',
-    'Anfrage schreiben': 'Send Inquiry',
-    'Anfrage per E-Mail öffnen': 'Open email inquiry',
-    'Region Weilerbach · Pfalz': 'Weilerbach Region · Palatinate',
-    'Hausmeisterservice': 'Property Management',
-    'Haushaltsnahe Dienstleistungen': 'Household Services',
-    'Kurier & Transport': 'Courier & Transport',
-    'Immobilienservice': 'Real Estate Services',
-    'Reparaturen & Instandhaltung': 'Repairs & Maintenance',
-    'Gartenpflege & Rasenmähen': 'Garden Care & Lawn Mowing',
-    'Winterdienst (Schnee & Streudienst)': 'Winter Service (Snow & Gritting)',
-    'Kleine Maler- & Montagearbeiten': 'Minor Painting & Assembly Work',
-    'Allgemeine Hausmeistertätigkeiten': 'General Caretaking Tasks',
-    'Einkäufe & Besorgungen': 'Shopping & Errands',
-    'Botengänge & Erledigungen': 'Messenger & Task Services',
-    'Möbel aufbauen & montieren': 'Furniture Assembly & Installation',
-    'Behördenpost, Schriftverkehr & Bewerbungen': 'Official Correspondence & Applications',
-    'IT im Haushalt: Handy, WLAN, Drucker': 'Household IT: Phone, WiFi, Printer',
-    'Hundesitting & Dogwalking': 'Dog Sitting & Dog Walking',
-    'Alltagsunterstützung für jede Situation': 'Daily Support for Any Situation',
-    'Lieferungen & Abholungen in der Region': 'Deliveries & Collections in the Region',
-    'Kleintransporte mit Anhänger': 'Small Transports with Trailer',
-    'Transporte mit Sprinter': 'Sprinter Van Transport',
-    'Flexible Terminabsprache': 'Flexible Scheduling',
-    'Zuverlässig, pünktlich & sorgfältig': 'Reliable, Punctual & Careful',
-    'Wohnungsübergaben (Ein- & Auszug)': 'Apartment Handovers (Move-in & Move-out)',
-    'Renovierung bei Mieterwechsel': 'Renovation on Tenant Change',
-    'Besichtigungstermine durchführen': 'Property Viewings',
-    'Objektbetreuung & laufende Verwaltung': 'Property Management & Ongoing Administration',
-    'Ansprechpartner für Mieter vor Ort': 'On-Site Contact for Tenants',
-  },
-  en: {}
-};
-
-// Inverse: English keys haben English values
-for (let key in translations.de) {
-  translations.en[translations.de[key]] = key;
-}
-
 
 document.addEventListener('DOMContentLoaded', function() {
   const deBut = document.getElementById('de-btn');
   const enBut = document.getElementById('en-btn');
-  const savedLang = localStorage.getItem('lang') || 'de';
-  let currentLang = savedLang;
-
-  function translateNode(node, lang) {
-    if (node.nodeType === Node.TEXT_NODE) {
-      const text = node.textContent.trim();
-      if (text && translations[lang] && translations[lang][text]) {
-        node.textContent = translations[lang][text];
-      }
-    } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE') {
-      Array.from(node.childNodes).forEach(child => translateNode(child, lang));
-    }
-  }
+  let currentLang = localStorage.getItem('lang') || 'de';
 
   function setLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('lang', lang);
     
-    // Übersetze den gesamten Body
-    document.body.querySelectorAll('*').forEach(el => {
-      Array.from(el.childNodes).forEach(node => {
-        if (node.nodeType === Node.TEXT_NODE) {
-          const text = node.textContent.trim();
-          if (text && translations[lang] && translations[lang][text]) {
-            node.textContent = translations[lang][text];
-          }
+    document.querySelectorAll('*').forEach(el => {
+      if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+        const text = el.textContent.trim();
+        if (text && translations[lang] && translations[lang][text]) {
+          el.textContent = translations[lang][text];
         }
-      });
+      }
     });
 
-    // Buttons aktualisieren
-    deBut.classList.toggle('lang-btn-active', lang === 'de');
-    enBut.classList.toggle('lang-btn-active', lang === 'en');
+    if (deBut) deBut.classList.toggle('lang-btn-active', lang === 'de');
+    if (enBut) enBut.classList.toggle('lang-btn-active', lang === 'en');
   }
 
-  deBut.addEventListener('click', () => setLanguage('de'));
-  enBut.addEventListener('click', () => setLanguage('en'));
+  if (deBut) deBut.addEventListener('click', () => setLanguage('de'));
+  if (enBut) enBut.addEventListener('click', () => setLanguage('en'));
   
-  // Initiale Sprache setzen (außer Deutsch, dann ist nichts zu tun)
-  if (savedLang === 'en') {
-    setLanguage('en');
-  }
+  if (currentLang === 'en') setLanguage('en');
 });
-
 
 document.getElementById('jahr').textContent = new Date().getFullYear();
-
-
-// Sprach-Umschaltung
-document.addEventListener('DOMContentLoaded',function(){
-  const deBut=document.getElementById('de-btn');
-  const enBut=document.getElementById('en-btn');
-  const savedLang=localStorage.getItem('lang')||'de';
-  let currentLang=savedLang;
-  
-  function setLanguage(lang){
-    currentLang=lang;
-    localStorage.setItem('lang',lang);
-    document.querySelectorAll('[data-de][data-en]').forEach(el=>{
-      el.textContent=lang==='de'?el.getAttribute('data-de'):el.getAttribute('data-en');
-    });
-    deBut.classList.toggle('lang-btn-active',lang==='de');
-    enBut.classList.toggle('lang-btn-active',lang==='en');
-  }
-  
-  deBut.addEventListener('click',()=>setLanguage('de'));
-  enBut.addEventListener('click',()=>setLanguage('en'));
-  setLanguage(currentLang);
-});
-
 
 // Anfrage als vorbereitete E-Mail öffnen
 document.getElementById('senden').addEventListener('click', function(){
@@ -997,6 +849,7 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 } else {
   document.querySelectorAll('.rein').forEach(function(el){ el.classList.add('da'); });
 }
+
 </script>
 </body>
 </html>
